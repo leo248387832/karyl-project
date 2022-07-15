@@ -22,41 +22,31 @@
   <h4>引用的项目</h4>
   <ul>
     <li>
-      <strong
-        ><a href="https://github.com/yescallop/janotator">yescallop/janotator</a></strong
-      >
+      <a href="https://github.com/yescallop/janotator">yescallop/janotator</a>
     </li>
     <li>
-      <strong><a href="https://github.com/zdhxiong/mdui">zdhxiong/mdui</a></strong>
+      <a href="https://github.com/zdhxiong/mdui">zdhxiong/mdui</a>
     </li>
     <li>
-      <strong><a href="https://github.com/beatgammit/crc32">beatgammit/crc32</a></strong>
+      <a href="https://github.com/beatgammit/crc32">beatgammit/crc32</a>
     </li>
     <li>
-      <strong><a href="https://github.com/fancyapps/ui">fancyapps/ui</a></strong>
+      <a href="https://github.com/fancyapps/ui">fancyapps/ui</a>
     </li>
     <li>
-      <strong
-        ><a href="https://github.com/zenorocha/clipboard.js"
-          >zenorocha/clipboard.js</a
-        ></strong
-      >
+      <a href="https://github.com/zenorocha/clipboard.js">zenorocha/clipboard.js</a>
     </li>
     <li>
-      <strong><a href="https://github.com/lodash/lodash">lodash</a></strong>
+      <a href="https://github.com/lodash/lodash">lodash</a>
     </li>
     <li>
-      <strong
-        ><a href="https://github.com/MatteoGabriele/vue-gtag"
-          >MatteoGabriele/vue-gtag</a
-        ></strong
-      >
+      <a href="https://github.com/MatteoGabriele/vue-gtag">MatteoGabriele/vue-gtag</a>
     </li>
     <li>
-      <strong><a href="https://github.com/vuejs/vue">vuejs/vue</a></strong>
+      <a href="https://github.com/vuejs/vue">vuejs/vue</a>
     </li>
     <li>
-      <strong><a href="https://github.com/axios/axios">axios</a></strong>
+      <a href="https://github.com/axios/axios">axios</a>
     </li>
   </ul>
 
