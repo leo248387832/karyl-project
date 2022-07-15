@@ -1,7 +1,16 @@
 {
   "name": "karyl-project",
-  "private": true,
   "version": "1.0.0",
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rsplwe/karyl-project.git"
+  },
+  "author": "Rsplwe <i@rsplwe.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rsplwe/karyl-project/issues"
+  },
+  "homepage": "https://github.com/Rsplwe/karyl-project#readme",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
