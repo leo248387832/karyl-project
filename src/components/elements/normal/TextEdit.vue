@@ -36,15 +36,15 @@ input {
   transition: all 0.2s;
 }
 
-.formClass input:-moz-placeholder {
+input:-moz-placeholder {
   color: #9a9a9a;
 }
 
-.formClass input:-ms-input-placeholder {
+input:-ms-input-placeholder {
   color: #9a9a9a;
 }
 
-.formClass input::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
   color: #9a9a9a;
 }
 </style>
