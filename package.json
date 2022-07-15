@@ -1,0 +1,27 @@
+{
+  "name": "karyl-project",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "crc32": "^0.2.2",
+    "lodash": "^4.17.21",
+    "mdui": "^1.0.2",
+    "vue": "^3.2.25",
+    "vue-router": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/node": "^18.0.4",
+    "@vitejs/plugin-legacy": "^2.0.0",
+    "@vitejs/plugin-vue": "^3.0.0",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.0",
+    "vue-tsc": "^0.38.5"
+  }
+}

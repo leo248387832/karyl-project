@@ -1,0 +1,81 @@
+<template>
+  <br />
+  <div class="mdui-typo">
+    <div class="mdui-card" style="background-color: rgba(255, 255, 255, 0.75) !important">
+      <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title">ようこそ!</div>
+        <div class="mdui-card-primary-subtitle">
+          あなたは
+          <span class="guest-number">{{ guestNumber }}</span>
+          人目の訪問者です
+        </div>
+      </div>
+      <div class="mdui-card-content">
+        <div>
+          如果遇到Bug的话，可以发个邮件给我 Email(Base64):&nbsp;aUByc3Bsd2UuY29t 或者
+          在b站私信我一下&nbsp;
+          <a target="_blank" href="https://space.bilibili.com/44974083">(点击访问)</a
+          >&nbsp;如果能再
+          <del
+            >顺带点个
+            <b>关注</b>
+          </del>
+          就再好不过了(笑Cry)。
+        </div>
+        <br />
+        <div>
+          <div>手机用户请点击<b>左上角</b>的按钮来切换工具</div>
+        </div>
+        <br />
+        友情链接
+        <ul>
+          <li>
+            <a target="_blank" href="https://lowi.ro">lowi.ro</a
+            >&nbsp;提供一些音游下载的小站
+          </li>
+          <li>
+            <a target="_blank" href="https://www.rsplwe.com">Rsplwe's Blog</a>&nbsp;
+          </li>
+        </ul>
+        <br />
+        <div>
+          <div>目前的待开发功能 (时间不定)</div>
+          <div>1. 弹幕下载 &amp;&amp; ASS字幕格式</div>
+          <div>
+            <del>2. 重新设计页面</del>
+          </div>
+          <div>
+            <del>3. 番剧和影视资源的查询</del>
+          </div>
+          <div>4. vtuber 排行榜</div>
+          <div>5. 图片混淆 &amp;&amp; 反混淆</div>
+          <div>6. 视频下载 (可能需要做成客户端)</div>
+        </div>
+        <br />
+        <div>
+          <div>Rsplwe</div>
+          <div>2022/3/6</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script lang="ts" setup>
+import { onMounted, ref } from "vue";
+import { randomGuestNumber } from "@/utils/GuestNumber";
+
+const guestNumber = ref("0000000");
+
+onMounted(() => {
+  guestNumber.value = "00" + randomGuestNumber().toString();
+});
+</script>
+
+<style scoped>
+.guest-number {
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+}
+</style>
