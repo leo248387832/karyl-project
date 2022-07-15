@@ -14,7 +14,7 @@
 
 ## 在线访问
 
-**[tool.rsplwe.com](https://[tool.rsplwe.com)**
+**[tool.rsplwe.com](https://tool.rsplwe.com)**
 
 ## 推荐使用的开发工具
 
