@@ -24,7 +24,6 @@ table tr {
 table th,
 table td {
   padding: 10px;
-  word-break: keep-all;
   text-align: center !important;
 }
 
@@ -54,7 +53,6 @@ table th {
     display: block;
     text-align: right;
     font-size: 13px;
-    word-break: keep-all;
     border-bottom: 1px dotted #ccc;
   }
 

@@ -105,7 +105,7 @@
         <td data-label="内容" style="word-break: break-all !important">
           {{ item.content }}
         </td>
-        <td data-label="结果" style="color: #ff80ab">
+        <td data-label="结果" class="mdui-text-color-pink-300">
           <div v-if="item.domState === DomState.RAW" v-on:click="trackUser(item.hash, i)">
             查看
           </div>
@@ -117,16 +117,15 @@
           >
             获取失败
           </div>
-          <div v-else-if="item.domState === DomState.UID">
-            <a
-              style="color: #ff80ab"
-              target="_blank"
-              v-for="(uid, j) in item.userId"
-              v-bind:key="j"
-              :href="'https://space.bilibili.com/' + uid"
-            >
-              {{ uid }}
-            </a>
+          <div v-else-if="item.domState === DomState.UID" style="">
+            <div v-for="(uid, j) in item.userId" v-bind:key="j">
+              <a
+                target="_blank"
+                class="mdui-text-color-pink-300"
+                :href="'https://space.bilibili.com/' + uid"
+                >{{ uid }}</a
+              >
+            </div>
           </div>
         </td>
       </tr>

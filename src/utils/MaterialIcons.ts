@@ -12,3 +12,4 @@ export const MATERIAL_ICON_LIVE_TV = "&#xe639;";
 export const MATERIAL_ICON_LINK = "&#xe157;";
 export const MATERIAL_ICON_IMAGE = "&#xe3f4;";
 export const MATERIAL_ICON_FAVORIVE = "&#xe87d;";
+export const MATERIAL_ICON_CONTENT_PASTE = "&#xe14f;";

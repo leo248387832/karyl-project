@@ -1,6 +1,7 @@
 import { createApp } from "vue";
 import { router } from "./router";
 import App from "./App.vue";
+import VueGtag from "vue-gtag";
 import mdui from "mdui";
 
 mdui
@@ -18,4 +19,14 @@ router.afterEach((to) => {
   window.document.title = `${to.meta.pageTitle}${baseTitle}`;
 });
 
-createApp(App).use(router).mount("#app");
+createApp(App)
+  .use(router)
+  .use(
+    VueGtag,
+    {
+      pageTrackerScreenviewEnabled: true,
+      config: { id: "G-SMXPN2V2GY" },
+    },
+    router
+  )
+  .mount("#app");

@@ -164,11 +164,35 @@ const openAboutDialog = () => {
   showDialog("关于", content);
 };
 
-// TODO: 订阅提示
-
 const navigateItems = getRouteMetas();
 
+function subscribeDialog() {
+  if (sessionStorage.getItem("isShowSubscribeTips")) {
+    return;
+  }
+  sessionStorage.setItem("isShowSubscribeTips", "true");
+  mdui.dialog({
+    title: "如果喜欢的话，不妨点点关注？",
+    history: false,
+    modal: true,
+    content:
+      '<div class="mdui-typo"><a target="_blank" href="https://space.bilibili.com/44974083">https://space.bilibili.com/44974083</a></div>',
+    buttons: [
+      {
+        text: "取消",
+      },
+      {
+        text: "关注",
+        onClick() {
+          window.open("https://space.bilibili.com/44974083");
+        },
+      },
+    ],
+  });
+}
+
 onMounted(() => {
+  setTimeout(subscribeDialog, 25e3);
   drawer.value = new mdui.Drawer(_drawer.value);
 });
 </script>
