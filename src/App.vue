@@ -76,9 +76,9 @@
   </div>
 </template>
 <script setup lang="ts">
-import BackgroundImageWithDay from "@/assets/Background/DeviantArt/tokyo_street_day_by_arsenixc.jpg";
-import BackgroundImageWithSunset from "@/assets/Background/DeviantArt/tokyo_street_sunset_by_arsenixc.jpg";
-import BackgroundImageWithNight from "@/assets/Background/DeviantArt/tokyo_street_night_by_arsenixc.jpg";
+import BackgroundImageWithDay from "@/assets/Background/DeviantArt/tokyo_street_day_by_arsenixc.webp";
+import BackgroundImageWithSunset from "@/assets/Background/DeviantArt/tokyo_street_sunset_by_arsenixc.webp";
+import BackgroundImageWithNight from "@/assets/Background/DeviantArt/tokyo_street_night_by_arsenixc.webp";
 import { StyleValue, ref, onMounted } from "vue";
 import { routerDefine } from "@/router";
 import { useRoute } from "vue-router";
