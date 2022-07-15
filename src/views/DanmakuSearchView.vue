@@ -62,7 +62,13 @@
     >
       <MduiIcon :icon="MATERIAL_ICON_REFRESH" />&nbsp;重置
     </MduiButton>
-    <MduiButton ripple raised class="mdui-m-r-1 mdui-m-b-1" color="deep-purple-500">
+    <MduiButton
+      ripple
+      raised
+      class="mdui-m-r-1 mdui-m-b-1"
+      color="deep-purple-500"
+      v-on:click="showHelpDialog"
+    >
       <MduiIcon :icon="MATERIAL_ICON_INFO" />&nbsp;食用说明 （请务必要看）
     </MduiButton>
   </div>
@@ -129,7 +135,7 @@
 </template>
 <style scoped></style>
 <script setup lang="ts">
-import { ref, reactive, watch, onMounted } from "vue";
+import { ref, reactive, watch } from "vue";
 import _crc32 from "crc32";
 import _ from "lodash";
 import ResponsiveTable from "@/components/elements/normal/ResponsiveTable.vue";
@@ -356,13 +362,23 @@ async function loadDanmaku(selectId: string) {
 function showTOSDialog() {
   const content =
     '<div class="mdui-typo">' +
-    "在你使用本工具前，请注意：<br><br>" +
-    "本工具仅供研究学习所用，本站不对查询结果做任何保证。<br>" +
-    "请在遵守本站服务条款以及您当地的法律法规的情况下使用本工具。<br>" +
-    "本站<b>不提倡也不支持</b>任何通过本工具进行的「<b>开盒</b>」、「<b>挂人</b>」、「<b>查成分</b>」行为（但真要这么做我也拦不住），在本站的使用条款中，这属于违规行为。<br><br>" +
+    "在你使用本工具前，请注意：<br /><br />" +
+    "本工具仅供研究学习所用，本站不对查询结果做任何保证。<br />" +
+    "请在遵守本站服务条款以及您当地的法律法规的情况下使用本工具。<br />" +
+    "本站<b>不提倡也不支持</b>任何通过本工具进行的「<b>开盒</b>」、「<b>挂人</b>」、「<b>查成分</b>」行为（但真要这么做我也拦不住），在本站的使用条款中，这属于违规行为。<br /><br />" +
     "<b>若您违规使用本工具，本站不会承担任何责任，违规使用所造成的任何后果，需您个人承担。</b>" +
     "</div>";
   showDialog("使用条款", content);
+}
+
+function showHelpDialog() {
+  const content =
+    '<div class="mdui-typo">' +
+    "<p>1. 由于Hash冲突，可能会产生多个结果，排除掉0级和不存在的Uid就是正确的结果，如排除掉后仍有多个结果请自行判断</p>" +
+    "<p>2. 影视、番剧和电影的视频ID一般都是ep或者ss开头的</p>" +
+    "<p>3. 在点击查询按钮的时候会自动把bv号转换成av号</p>" +
+    "</div>";
+  showDialog("使用说明", content);
 }
 
 watch(videoId, (newValue, oldValue) => {

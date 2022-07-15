@@ -8,3 +8,4 @@ declare module "*.vue" {
 }
 
 declare module "crc32";
+declare module "@fancyapps/ui";

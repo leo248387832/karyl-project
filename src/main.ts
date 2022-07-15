@@ -10,7 +10,7 @@ mdui
   );
 
 router.afterEach((to) => {
-  const baseTitle = " - ${title}";
+  const baseTitle = " - 哔哩哔哩工具箱";
   if (to.name === undefined) {
     window.document.title = "404";
     return;

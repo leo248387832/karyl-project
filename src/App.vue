@@ -40,7 +40,7 @@
     <button v-on:click="drawer.toggle" class="mdui-btn mdui-btn-icon">
       <MduiIcon :icon="MATERIAL_ICON_LIST" />
     </button>
-    <a class="mdui-typo-title">${title}</a>
+    <a class="mdui-typo-title">哔哩哔哩工具箱</a>
     <div class="mdui-toolbar-spacer"></div>
 
     <!-- Menu List -->
@@ -83,7 +83,6 @@ import { StyleValue, ref, onMounted } from "vue";
 import { routerDefine } from "@/router";
 import { useRoute } from "vue-router";
 
-import "mdui/dist/css/mdui.css";
 import mdui from "mdui";
 import MduiIcon from "@/components/elements/mdui/MduiIcon.vue";
 import {
@@ -173,7 +172,9 @@ onMounted(() => {
   drawer.value = new mdui.Drawer(_drawer.value);
 });
 </script>
-<style scoped>
+<style lang="scss">
+@import "mdui/dist/css/mdui.css";
+
 .drawer-opactity {
   background-color: rgba(0, 0, 0, 0.35);
 }

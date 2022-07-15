@@ -13,18 +13,3 @@ export function showDialog(title: string, content: string) {
     ],
   });
 }
-
-function showTOSDialog() {
-  const content = "";
-  mdui.dialog({
-    title: "TOS",
-    history: false,
-    modal: true,
-    content: content,
-    buttons: [
-      {
-        text: "OK",
-      },
-    ],
-  });
-}

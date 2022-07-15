@@ -6,6 +6,7 @@ import {
   MATERIAL_ICON_LIVE_TV,
   MATERIAL_ICON_IMAGE,
   MATERIAL_ICON_LOOP,
+  MATERIAL_ICON_FAVORIVE,
 } from "@/utils/MaterialIcons";
 import HomeView from "@/views/HomeView.vue";
 import JapanesePronunciationView from "@/views/JapanesePronunciationView.vue";
@@ -13,6 +14,7 @@ import DanmakuSearchView from "@/views/DanmakuSearchView.vue";
 import LiveStreamView from "@/views/LiveStreamView.vue";
 import VideoCoverView from "@/views/VideoCoverView.vue";
 import BvAvMutualView from "@/views/BvAvMutualView.vue";
+import DonateView from "@/views/DonateView.vue";
 
 export const routerDefine = [
   {
@@ -24,6 +26,16 @@ export const routerDefine = [
       pageDescription: "",
     },
     component: HomeView,
+  },
+  {
+    path: "/donate",
+    name: "Donate",
+    meta: {
+      pageTitle: " 捐赠",
+      pageIcon: MATERIAL_ICON_FAVORIVE,
+      pageDescription: "",
+    },
+    component: DonateView,
   },
   {
     path: "/japanese-pronunciation",
