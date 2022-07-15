@@ -46,7 +46,7 @@
     <!-- Menu List -->
     <ul id="app-toolbar-menu" class="mdui-menu">
       <li class="mdui-menu-item">
-        <a v-on:click="openAboutDialog" class="mdui-ripple">
+        <a v-on:click="router.push('/about')" class="mdui-ripple">
           <MduiIcon class="mdui-menu-item-icon" :icon="MATERIAL_ICON_INFO" />关于
         </a>
       </li>
@@ -81,7 +81,7 @@ import BackgroundImageWithSunset from "@/assets/Background/DeviantArt/tokyo_stre
 import BackgroundImageWithNight from "@/assets/Background/DeviantArt/tokyo_street_night_by_arsenixc.webp";
 import { StyleValue, ref, onMounted } from "vue";
 import { routerDefine } from "@/router";
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 
 import mdui from "mdui";
 import MduiIcon from "@/components/elements/mdui/MduiIcon.vue";
@@ -90,7 +90,6 @@ import {
   MATERIAL_ICON_MENU,
   MATERIAL_ICON_LIST,
 } from "@/utils/MaterialIcons";
-import { showDialog } from "@/utils/Dialog";
 
 const route = useRoute();
 const drawer: any = ref(null);
@@ -152,19 +151,8 @@ const openAppBarMenu = () => {
   inst.open();
 };
 
-const openAboutDialog = () => {
-  const content =
-    '<div class="mdui-typo">' +
-    '    Background Source: <a href="https://www.deviantart.com/arsenixc">@ArseniXC</a><br>' +
-    '    E-mail: <a href="mailto:i@rsplwe.com">i@rsplwe.com</a><br>' +
-    '    Framework: <a href="https://www.mdui.org/">MDUI</a>,<a href="https://vuejs.org/index.html">Vue.js</a><br>' +
-    '    <br>Copyright &copy; 2017-2022 <a href="https://github.com/yescallop">Scallop Ye</a>, <a href="https://github.com/Rsplwe">Rsplwe</a><br><br>' +
-    "    <b>願ったんなら叶えてしまえやって</b>" +
-    "</div>";
-  showDialog("关于", content);
-};
-
 const navigateItems = getRouteMetas();
+const router = useRouter();
 
 function subscribeDialog() {
   if (sessionStorage.getItem("isShowSubscribeTips")) {

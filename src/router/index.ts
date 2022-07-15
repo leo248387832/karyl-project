@@ -7,6 +7,7 @@ import {
   MATERIAL_ICON_IMAGE,
   MATERIAL_ICON_LOOP,
   MATERIAL_ICON_FAVORIVE,
+  MATERIAL_ICON_INFO,
 } from "@/utils/MaterialIcons";
 import HomeView from "@/views/HomeView.vue";
 import JapanesePronunciationView from "@/views/JapanesePronunciationView.vue";
@@ -15,6 +16,7 @@ import LiveStreamView from "@/views/LiveStreamView.vue";
 import VideoCoverView from "@/views/VideoCoverView.vue";
 import BvAvMutualView from "@/views/BvAvMutualView.vue";
 import DonateView from "@/views/DonateView.vue";
+import AboutView from "@/views/AboutView.vue";
 
 export const routerDefine = [
   {
@@ -86,6 +88,16 @@ export const routerDefine = [
       pageDescription: "顾名思义的功能",
     },
     component: DanmakuSearchView,
+  },
+  {
+    path: "/about",
+    name: "About",
+    meta: {
+      pageTitle: "关于",
+      pageIcon: MATERIAL_ICON_INFO,
+      pageDescription: "",
+    },
+    component: AboutView,
   },
 ];
 const constantRoutes: Array<RouteRecordRaw> = routerDefine;

@@ -12,18 +12,6 @@
       </div>
       <div class="mdui-card-content">
         <div>
-          如果遇到Bug的话，可以发个邮件给我 Email(Base64):&nbsp;aUByc3Bsd2UuY29t 或者
-          在b站私信我一下&nbsp;
-          <a target="_blank" href="https://space.bilibili.com/44974083">(点击访问)</a
-          >&nbsp;如果能再
-          <del
-            >顺带点个
-            <b>关注</b>
-          </del>
-          就再好不过了(笑Cry)。
-        </div>
-        <br />
-        <div>
           <div>手机用户请点击<b>左上角</b>的按钮来切换工具</div>
         </div>
         <br />
