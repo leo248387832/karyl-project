@@ -1,5 +1,6 @@
 import { createApp } from "vue";
 import { router } from "./router";
+import VueMatomo from "vue-matomo";
 import App from "./App.vue";
 import VueGtag from "vue-gtag";
 import mdui from "mdui";
@@ -29,4 +30,15 @@ createApp(App)
     },
     router
   )
+  .use(VueMatomo, {
+    host: "https://tracker.rsplwe.com",
+    siteId: 1,
+    trackerFileName: "matomo",
+    router,
+    enableLinkTracking: true,
+    requireConsent: false,
+    trackInitialView: true,
+    enableHeartBeatTimer: true,
+    heartBeatTimerInterval: 15,
+  })
   .mount("#app");

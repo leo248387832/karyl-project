@@ -48,6 +48,9 @@
     <li>
       <a href="https://github.com/axios/axios">axios</a>
     </li>
+    <li>
+      <a href="https://github.com/AmazingDreams/vue-matomo">AmazingDreams/vue-matomo</a>
+    </li>
   </ul>
 
   <br />

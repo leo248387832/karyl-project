@@ -1,7 +1,7 @@
 {
   "name": "karyl-project",
   "version": "1.0.0",
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/Rsplwe/karyl-project.git"
   },
@@ -25,6 +25,7 @@
     "mdui": "^1.0.2",
     "vue": "^3.2.25",
     "vue-gtag": "^2.0.1",
+    "vue-matomo": "^4.1.0",
     "vue-router": "^4.1.2"
   },
   "devDependencies": {
