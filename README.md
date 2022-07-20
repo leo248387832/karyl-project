@@ -1,6 +1,6 @@
 <div align="center">
 
-[![logo](https://github.com/Rsplwe/karyl-project/raw/main/public/img/icons/android-chrome-192x192.png)](https://github.com/arkntools)
+[![logo](https://github.com/Rsplwe/karyl-project/raw/main/public/img/icons/android-chrome-192x192.png)](https://github.com/Rsplwe/karyl-project)
 
 # 哔哩哔哩工具箱
 
