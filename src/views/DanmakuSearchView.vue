@@ -250,7 +250,7 @@ async function trackUser(hash: string, i: number) {
     hash: state.danmakuList[i].hash,
   };
 
-  matomoTrack("DanmakuSearch", "loadDanmaku", JSON.stringify(source));
+  matomoTrack("DanmakuSearch", "trackUser", JSON.stringify(source));
 
   setTimeout(() => {
     try {
