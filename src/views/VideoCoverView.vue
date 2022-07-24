@@ -97,7 +97,7 @@ async function getVideoCoverUrl() {
     videoId.value = bv2av(videoId.value);
   }
 
-  matomoTrack("VideoCover", "getVideoCoverUrl", "VideoId", videoId.value);
+  matomoTrack("VideoCover", "getVideoCoverUrl", videoId.value);
 
   const reqId = videoId.value.replace("av", "");
 

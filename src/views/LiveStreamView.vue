@@ -78,7 +78,7 @@ async function getLiveStreamUrl() {
     return;
   }
 
-  matomoTrack("LiveStream", "getLiveStreamUrl", "RoomId", liveRoomId.value);
+  matomoTrack("LiveStream", "getLiveStreamUrl", liveRoomId.value);
 
   try {
     state.requestState = true;

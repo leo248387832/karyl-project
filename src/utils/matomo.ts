@@ -1,11 +1,6 @@
-export function matomoTrack(
-  category: string,
-  action: string,
-  name: string,
-  value: string
-) {
+export function matomoTrack(category: string, action: string, value: string) {
   try {
     // @ts-ignore
-    window._paq.push(["trackEvent", category, action, name, value]);
+    window._paq.push(["trackEvent", category, action, value, 1]);
   } catch (_) {}
 }

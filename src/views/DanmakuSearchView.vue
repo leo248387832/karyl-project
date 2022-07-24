@@ -250,7 +250,7 @@ async function trackUser(hash: string, i: number) {
     hash: state.danmakuList[i].hash,
   };
 
-  matomoTrack("DanmakuSearch", "loadDanmaku", "Source", JSON.stringify(source));
+  matomoTrack("DanmakuSearch", "loadDanmaku", JSON.stringify(source));
 
   setTimeout(() => {
     try {
@@ -291,7 +291,7 @@ async function loadPageList() {
     userId: uid.value,
   };
 
-  matomoTrack("DanmakuSearch", "loadPageList", "Source", JSON.stringify(source));
+  matomoTrack("DanmakuSearch", "loadPageList", JSON.stringify(source));
 
   if (isBV(videoId.value)) {
     videoId.value = bv2av(videoId.value);
@@ -349,7 +349,7 @@ async function loadDanmaku(selectId: string) {
     page: state.currentSelectPage,
   };
 
-  matomoTrack("DanmakuSearch", "loadDanmaku", "Source", JSON.stringify(source));
+  matomoTrack("DanmakuSearch", "loadDanmaku", JSON.stringify(source));
 
   try {
     state.requestState = true;
