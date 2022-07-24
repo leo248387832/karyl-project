@@ -34,11 +34,13 @@ createApp(App)
     host: "https://tracker.rsplwe.com",
     siteId: 1,
     trackerFileName: "matomo",
+    trackerUrl: undefined,
+    trackerScriptUrl: undefined,
     router,
     enableLinkTracking: true,
     requireConsent: false,
     trackInitialView: true,
     enableHeartBeatTimer: true,
-    heartBeatTimerInterval: 15,
+    heartBeatTimerInterval: 5,
   })
   .mount("#app");

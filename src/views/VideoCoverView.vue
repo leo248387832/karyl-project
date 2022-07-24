@@ -62,6 +62,7 @@ import { showDialog } from "@/utils/Dialog";
 import { fetchVideoCover } from "@/api/video";
 import { isVideo, isBV } from "@/utils/IdCheck";
 import { bv2av } from "@/utils/BIdTools";
+import { matomoTrack } from "@/utils/matomo";
 import Clipboard from "clipboard";
 import mdui from "mdui";
 
@@ -95,6 +96,9 @@ async function getVideoCoverUrl() {
   if (isBV(videoId.value)) {
     videoId.value = bv2av(videoId.value);
   }
+
+  matomoTrack("VideoCover", "getVideoCoverUrl", "VideoId", videoId.value);
+
   const reqId = videoId.value.replace("av", "");
 
   try {
