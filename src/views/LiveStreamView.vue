@@ -49,6 +49,7 @@ import MduiIcon from "@/components/elements/mdui/MduiIcon.vue";
 import { MATERIAL_ICON_LINK, MATERIAL_ICON_REFRESH } from "@/utils/MaterialIcons";
 import { showDialog } from "@/utils/Dialog";
 import { fetchLiveStream } from "@/api/live";
+import { matomoTrack } from "@/utils/matomo";
 
 const state = reactive({
   requestState: false,
@@ -76,6 +77,8 @@ async function getLiveStreamUrl() {
   if (!state.completeInputState) {
     return;
   }
+
+  matomoTrack("LiveStream", "getLiveStreamUrl", "RoomId", liveRoomId.value);
 
   try {
     state.requestState = true;
