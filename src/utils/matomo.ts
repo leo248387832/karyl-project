@@ -1,6 +1,11 @@
-export function matomoTrack(category: string, action: string, value: string) {
+export function matomoTrack(name: string, action: string, value: string) {
   try {
     // @ts-ignore
-    window._paq.push(["trackEvent", category, action, value, 1]);
+    window._paq.push([
+      "trackContentImpression",
+      `${name}/${action}`,
+      value,
+      "https://tool.example.com",
+    ]);
   } catch (_) {}
 }
