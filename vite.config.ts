@@ -4,6 +4,9 @@ import legacy from "@vitejs/plugin-legacy";
 import { fileURLToPath, URL } from "url";
 
 export default defineConfig({
+  build: {
+    target: "ES2015"
+  },
   plugins: [
     vue(),
     splitVendorChunkPlugin(),
