@@ -151,7 +151,7 @@ import {
 import { isValid, isBV, isBangumi, isEP } from "@/utils/IdCheck";
 import { showDialog } from "@/utils/Dialog";
 import { bv2av } from "@/utils/BIdTools";
-import { Crc32 } from "@/utils/Crc32";
+import { tracker } from "@/utils/Crc32";
 import { fetchBangumiPageList, fetchNormalPageList, fetchDanmakuList } from "@/api/video";
 
 enum SearchMode {
@@ -252,7 +252,7 @@ async function trackUser(hash: string, i: number) {
 
   setTimeout(() => {
     try {
-      new Crc32(hash).tracker().forEach((e) => state.danmakuList[i].userId.push(e));
+      tracker(hash).forEach((e) => state.danmakuList[i].userId.push(e));
       state.danmakuList[i].domState = DomState.UID;
     } catch (e) {
       showDialog("Error", (e as Error).message);
