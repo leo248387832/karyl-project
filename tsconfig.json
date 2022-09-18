@@ -1,16 +1,23 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "ES5",
     "useDefineForClassFields": true,
-    "module": "esnext",
+    "module": "ES2015",
     "moduleResolution": "node",
     "strict": true,
-    "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
-    "lib": ["esnext", "dom"],
+    "downlevelIteration": true,
+    "lib": [
+      "es2015",
+      "es2016",
+      "es2017",
+      "es2018",
+      "dom",
+      "dom.iterable"
+    ],
     "skipLibCheck": true,
     "paths": {
       "@/*": ["./src/*"]
