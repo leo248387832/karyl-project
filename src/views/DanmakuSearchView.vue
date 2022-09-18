@@ -152,7 +152,6 @@ import { isValid, isBV, isBangumi, isEP } from "@/utils/IdCheck";
 import { showDialog } from "@/utils/Dialog";
 import { bv2av } from "@/utils/BIdTools";
 import { Crc32 } from "@/utils/Crc32";
-import { matomoTrack } from "@/utils/matomo";
 import { fetchBangumiPageList, fetchNormalPageList, fetchDanmakuList } from "@/api/video";
 
 enum SearchMode {
@@ -236,6 +235,7 @@ function resetAll() {
 async function trackUser(hash: string, i: number) {
   if (hash === "f4dbdf21") {
     state.danmakuList[i].domState = DomState.ANONYMOUS;
+    return;
   }
 
   state.danmakuList[i].domState = DomState.LOADING;
@@ -249,8 +249,6 @@ async function trackUser(hash: string, i: number) {
     content: state.danmakuList[i].content,
     hash: state.danmakuList[i].hash,
   };
-
-  matomoTrack("DanmakuSearch", "trackUser", JSON.stringify(source));
 
   setTimeout(() => {
     try {
@@ -290,8 +288,6 @@ async function loadPageList() {
     keyword: keyword.value,
     userId: uid.value,
   };
-
-  matomoTrack("DanmakuSearch", "loadPageList", JSON.stringify(source));
 
   if (isBV(videoId.value)) {
     videoId.value = bv2av(videoId.value);
@@ -348,8 +344,6 @@ async function loadDanmaku(selectId: string) {
     userId: uid.value,
     page: state.currentSelectPage,
   };
-
-  matomoTrack("DanmakuSearch", "loadDanmaku", JSON.stringify(source));
 
   try {
     state.requestState = true;
