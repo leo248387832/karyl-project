@@ -1,6 +1,6 @@
 function isBV(id: string): boolean {
   return !!id.match(
-    /[bB][vV][fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF]{10}/g
+    /^[bB][vV][fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF]{10}/g
   );
 }
 
