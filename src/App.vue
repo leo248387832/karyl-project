@@ -106,8 +106,8 @@ const getBackgroundImage = (): string => {
   const data = [
     [0, 6, BackgroundImageWithNight],
     [7, 16, BackgroundImageWithDay],
-    [17, 19, BackgroundImageWithSunset],
-    [18, 24, BackgroundImageWithNight],
+    [17, 18, BackgroundImageWithSunset],
+    [19, 24, BackgroundImageWithNight],
   ];
   const nowHours = new Date().getHours();
   let result = BackgroundImageWithDay;
