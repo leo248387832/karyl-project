@@ -17,13 +17,6 @@
         <br />
         友情链接
         <ul>
-          <li>
-            <a target="_blank" href="https://lowi.ro">lowi.ro</a
-            >&nbsp;提供一些音游下载的小站
-          </li>
-          <li>
-            <a target="_blank" href="https://www.rsplwe.com">Rsplwe's Blog</a>&nbsp;
-          </li>
         </ul>
         <br />
         <div>
