@@ -4,7 +4,7 @@
 
 # 哔哩哔哩工具箱
 
-[![GitHub License](https://img.shields.io/github/license/Rsplwe/karyl-project?style=flat-square)](https://github.com/Rsplwe/karyl-project/blob/main/LICENSE) [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Rsplwe/karyl-project/Vue.js%20CI?style=flat-square)](https://github.com/Rsplwe/karyl-project/actions/workflows/vue.js.yml) 
+[![GitHub License](https://img.shields.io/github/license/Rsplwe/karyl-project?style=flat-square)](https://github.com/Rsplwe/karyl-project/blob/main/LICENSE) [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Rsplwe/karyl-project/vue.js.yml?branch=main&style=flat-square)](https://github.com/Rsplwe/karyl-project/actions/workflows/vue.js.yml) 
 
 </div>
 
