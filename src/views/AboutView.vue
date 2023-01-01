@@ -55,7 +55,7 @@
 
   <br />
   <p>
-    Copyright &copy; 2017-2022 <a href="https://github.com/yescallop">Scallop Ye</a>,
+    Copyright &copy; 2017-2023 <a href="https://github.com/yescallop">Scallop Ye</a>,
     <a href="https://github.com/Rsplwe">Rsplwe</a>
   </p>
   <br />
